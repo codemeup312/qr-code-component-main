@@ -1,0 +1,63 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  margin: 5% auto;
+  background-color: var(--Light-gray);
+  font-family: "Outfit", sans-serif;
+}
+.card-container {
+  width: 23%;
+  margin: 0 auto;
+  padding: 0.8% 0 1.5% 0;
+  background-color: var(--White);
+  text-align: center;
+  border-radius: 5%;
+}
+
+.barcode-image {
+  width: 90%;
+  border-radius: 5%;
+}
+.text-wapper {
+  margin: 5% 10%;
+}
+.card-heading {
+  color: var(--Dark-blue);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.card-pharagraph {
+  padding-top: 1rem;
+  font-size: 15px;
+  color: var(--Grayish-blue);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: -40px;
+  color: hsl(228, 45%, 44%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card-container {
+    width: 80%;
+  }
+  body {
+    margin: 30% auto;
+  }
+}
